@@ -1,0 +1,17 @@
+h1 {
+  color: #ffa500;  
+  font-size: 30px;
+  font-weight: bold;
+}
+
+p {
+    color: #0000ff;
+    font-size: 16px;
+    font-weight: normal;
+}
+
+h2 {
+    color: #008000;
+    font-size: 25px;
+    font-weight: 600;
+}
