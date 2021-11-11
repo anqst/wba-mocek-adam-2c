@@ -2,10 +2,31 @@ h1, h2 {
     color: #00ff00;
 }
 
-div > h3{
-    color: #ff00ff;
+h3{
+    color:red;
 }
 
-div.main > p:hover{
-    background-color: lawngreen;
+div.main h3{
+    color:#0066ff;
+}
+
+.main{
+    color: #20b2aa;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+a.highlight:hover{
+    color: red;
+}
+
+div#secret p{
+    display: none;
+}
+
+div#secret:hover p{
+    display: block;
 }
