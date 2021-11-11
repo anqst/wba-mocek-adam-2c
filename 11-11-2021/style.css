@@ -1,0 +1,11 @@
+h1, h2 {
+    color: #00ff00;
+}
+
+div > h3{
+    color: #ff00ff;
+}
+
+div.main > p:hover{
+    background-color: lawngreen;
+}
