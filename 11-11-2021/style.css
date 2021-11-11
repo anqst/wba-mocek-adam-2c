@@ -1,3 +1,5 @@
+/* elements */
+
 h1, h2 {
     color: #00ff00;
 }
@@ -6,24 +8,39 @@ h3{
     color:red;
 }
 
+/* div.main */
+
 div.main h3{
     color:#0066ff;
 }
 
-.main{
+div.main p{
     color: #20b2aa;
 }
 
+div.main p::selection{
+    color: #7fff00;
+}
+
+div.main p::first-letter {
+    color: #0066ff;
+}
+
+/* anchor tag */
+
 a{
     text-decoration: none;
-    color: black;
+    color: #000000;
 }
 
 a.highlight:hover{
-    color: red;
+    color: #ff0000;
 }
 
+/* id="secret" */
+
 div#secret p{
+    color: #8a2be2;
     display: none;
 }
 
