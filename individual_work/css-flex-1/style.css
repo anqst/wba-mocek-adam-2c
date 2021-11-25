@@ -1,0 +1,38 @@
+.container{
+    background-color: cornsilk;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+
+.flex{
+    display: flex;
+
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content:center;
+
+   /* padding: 5px 5px; */
+    width: 1200px;
+    background-color: cornflowerblue;
+}
+
+.flex > div{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 250px;
+    width: 100%;
+
+    font-size: 3em;
+    background-color: tomato;
+    color: white;
+    margin: 5px 5px;
+}
