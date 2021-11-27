@@ -14,13 +14,13 @@
 
     flex-direction: row;
     flex-wrap: nowrap;
-    justify-content: center;
-    align-items: center;
+    justify-content: flex-start;
+    align-items: stretch;
     align-content:space-around;
 
-    gap: 5px 5px;
+    gap: 0px 10px;
+    padding: 10px 10px;
 
-    /* padding: 5px 5px; */
     width: 1200px;
     background-color: cornflowerblue;
 }
@@ -36,5 +36,5 @@
     font-size: 3em;
     background-color: tomato;
     color: white;
-    margin: 5px 5px;
+    /* margin: 5px 5px; */
 }
