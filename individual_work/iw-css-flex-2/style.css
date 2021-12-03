@@ -119,3 +119,7 @@ h2{
     align-items: flex-start;
     align-content: stretch;
 }
+
+a:hover{
+    color: rgb(153, 0, 255);
+}
