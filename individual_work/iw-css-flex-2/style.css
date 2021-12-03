@@ -1,21 +1,100 @@
 .container{
-    height: 100vh;
-    width: 100vw;
-
-}
-
-
-
-.back-img{
 
     height: 100vh;
     width: 100vw;
+
+    background-image: url(resources/cosmic-gradient.jpg);
+    background-color: rgb(73, 0, 141);
+    font-family: Arial, Helvetica, sans-serif;
+
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    align-content: flex-start;
+
 }
 
-.navbar{
+.container .heading{
 
-    height: 25vh;
-    width: 100vw;
+    height: 12%;
+    width: 100%;
 
     background-color: rgba(38, 32, 62, 0.8);
+    color: rgb(255, 255, 255);
+    font-size: 1.1rem;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: flex-start;
+    align-content: flex-start;
+}
+
+.container .content{
+
+    height: 88%;
+    width: 100%;
+
+    background-color: wheat;
+}
+
+.heading .navbar{
+    
+    height: 100%;
+    width: 80%;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    align-content: flex-start;
+}
+
+.navbar #logo-ssps{
+
+    height: 100%;
+    width: 25%;
+
+    background-color: crimson;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: flex-start;
+}
+
+.navbar #menu{
+
+    height: 100%;
+    width: 50%;
+
+    background-color: cyan;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: stretch;
+
+    gap: 20px;
+}
+
+.navbar #search-icon{
+
+    height: 100%;
+    width: 25%;
+
+    background-color: crimson;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+    align-items: center;
+    align-content: flex-start;
 }
