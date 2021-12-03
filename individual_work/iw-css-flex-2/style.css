@@ -6,12 +6,11 @@ h2{
 
     height: 100vh;
     width: 100vw;
-
-    background-image: url(resources/cosmic-gradient.jpg);
-    background-color: rgb(73, 0, 141);
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1rem;
 
+    background-image: url(resources/cosmic-gradient.jpg);
+    background-color: rgb(73, 0, 141);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -75,7 +74,7 @@ h2{
     align-items: center;
     align-content: stretch;
 
-    gap: 20px;
+    gap: 30px;
 }
 
 .navbar #search-icon{
@@ -107,16 +106,17 @@ h2{
 .content > div{
 
     width: 50%;
+    padding: 20px 20px;
+    border-radius: 15px 15px;
+
     background-color: rgb(255, 255, 255);
-
-
 }
 
-.content > div > div{
+.content > div > div.text{
 
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
     align-items: flex-start;
-    align-content: center;
+    align-content: stretch;
 }
