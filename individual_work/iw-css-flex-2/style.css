@@ -1,3 +1,7 @@
+h2{
+    font-size: 2rem;
+}
+
 .container{
 
     height: 100vh;
@@ -6,6 +10,7 @@
     background-image: url(resources/cosmic-gradient.jpg);
     background-color: rgb(73, 0, 141);
     font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
 
     background-position: center;
     background-size: cover;
@@ -35,14 +40,6 @@
     align-content: flex-start;
 }
 
-.container .content{
-
-    height: 88%;
-    width: 100%;
-
-    background-color: wheat;
-}
-
 .heading .navbar{
     
     height: 100%;
@@ -60,8 +57,6 @@
     height: 100%;
     width: 25%;
 
-    background-color: crimson;
-
     display: flex;
     flex-flow: row nowrap;
     justify-content: flex-start;
@@ -73,8 +68,6 @@
 
     height: 100%;
     width: 50%;
-
-    background-color: cyan;
 
     display: flex;
     flex-flow: row nowrap;
@@ -90,11 +83,40 @@
     height: 100%;
     width: 25%;
 
-    background-color: crimson;
-
     display: flex;
     flex-flow: row nowrap;
     justify-content: flex-end;
     align-items: center;
     align-content: flex-start;
+}
+
+
+
+.container .content{
+
+    height: 88%;
+    width: 100%;
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: flex-start;
+    align-content: center;
+}
+
+.content > div{
+
+    width: 50%;
+    background-color: rgb(255, 255, 255);
+
+
+}
+
+.content > div > div{
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: flex-start;
+    align-content: center;
 }
