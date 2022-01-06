@@ -37,8 +37,8 @@ header,
 footer {
   background-color: rgb(34, 52, 72);
   color: rgb(224, 224, 224);
-  height: 10vh;
   width: 100%;
+  border-bottom: solid 0.5rem rgb(0, 0, 0);
 
   display: flex;
   flex-flow: row nowrap;
@@ -47,10 +47,27 @@ footer {
   align-content: flex-start;
 }
 
-header > nav,
+header {
+  height: 10vh;
+}
+
+footer {
+  height: 15vh;
+}
+
+header > .header-container,
 footer > .footer-container {
   margin: 0 2.5rem;
 
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  align-content: flex-start;
+  gap: 2rem;
+}
+
+header > .header-container > nav {
   display: flex;
   flex-flow: row nowrap;
   justify-content: flex-start;
