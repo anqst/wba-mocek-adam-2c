@@ -22,7 +22,7 @@ h2 {
   font-size: 1.6rem;
 }
 
-.noselect * {
+.noselect {
   -webkit-touch-callout: none; /* iOS Safari */
   -webkit-user-select: none; /* Safari */
   -khtml-user-select: none; /* Konqueror HTML */
@@ -33,12 +33,12 @@ h2 {
 
 /* Header, footer */
 
-header,
-footer {
+header {
   background-color: rgb(34, 52, 72);
   color: rgb(224, 224, 224);
   width: 100%;
-  border-bottom: solid 0.5rem rgb(0, 0, 0);
+
+  border-bottom: 0.3rem solid rgb(0, 0, 0);
 
   display: flex;
   flex-flow: row nowrap;
@@ -47,17 +47,26 @@ footer {
   align-content: flex-start;
 }
 
-header {
-  height: 10vh;
-}
-
 footer {
-  height: 15vh;
+  background-color: rgb(34, 52, 72);
+  color: rgb(224, 224, 224);
+  width: 100%;
+
+  border-top: 0.3rem solid rgb(0, 0, 0);
+  border-bottom: 1.6rem solid rgb(0, 0, 0);
+
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  align-content: flex-start;
 }
 
-header > .header-container,
-footer > .footer-container {
-  margin: 0 2.5rem;
+header > .header-container {
+  width: 90%;
+  margin: auto;
+
+  padding: 1.2rem 0px;
 
   display: flex;
   flex-flow: row nowrap;
@@ -68,10 +77,48 @@ footer > .footer-container {
 }
 
 header > .header-container > nav {
+  font-size: 1.2rem;
+
   display: flex;
   flex-flow: row nowrap;
   justify-content: flex-start;
   align-items: center;
   align-content: flex-start;
   gap: 2rem;
+}
+
+footer > .footer-container {
+  width: 90%;
+  margin: auto;
+
+  padding: 1.8rem 0rem;
+
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  align-content: flex-start;
+  gap: 2rem;
+}
+
+footer > .footer-container > #footer-infobox {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  align-content: flex-start;
+  gap: 5rem;
+}
+
+footer > .footer-container > #copyright {
+  font-size: 0.8rem;
+  align-self: flex-end;
+}
+
+footer .footer-container h2 {
+  padding-bottom: 0.4rem;
+}
+
+footer .footer-container p {
+  padding-bottom: 0.2rem;
 }
