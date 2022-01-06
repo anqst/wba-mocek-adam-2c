@@ -1,0 +1,56 @@
+/* Body + global */
+
+body{
+    background-color: rgb(80, 80, 80);
+    color: rgb(224, 224, 224);
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+}
+
+a:hover{
+    color: rgb(196, 95, 95);
+}
+
+/* Header */
+
+header{
+    background-color: rgb(53, 53, 53);
+    height: 10vh;
+    width: 100vw;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: flex-start;
+}
+
+header nav{
+
+    margin: 0 2.5vw;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: flex-start;
+    gap: 2rem;
+
+    list-style-type: none;
+}
+
+/* Main stylinq */
+
+main{
+    margin: 1rem 3rem;
+    width: 80vw;
+    text-align: justify;
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: flex-start;
+    gap: 2rem;
+}
