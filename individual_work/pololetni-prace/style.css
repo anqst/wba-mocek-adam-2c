@@ -22,12 +22,22 @@ h2{
     font-size: 1.6rem;
 }
 
+.noselect *{
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Old versions of Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Non-prefixed version, currently supported by Chrome, Edge, Opera and Firefox */
+}
+
+
 /* Header, footer */
 
 header, footer{
     background-color: rgb(65, 65, 65);
     height: 10vh;
-    width: 100vw;
+    width: 100%;
 
     display: flex;
     flex-flow: row nowrap;
@@ -38,7 +48,7 @@ header, footer{
 
 header > nav, footer > .footer-container{
 
-    margin: 0 2.5vw;
+    margin: 0 2.5rem;
 
     display: flex;
     flex-flow: row nowrap;
@@ -48,14 +58,6 @@ header > nav, footer > .footer-container{
     gap: 2rem;
 }
 
-.noselect *{
-    -webkit-touch-callout: none; /* iOS Safari */
-    -webkit-user-select: none; /* Safari */
-    -khtml-user-select: none; /* Konqueror HTML */
-    -moz-user-select: none; /* Old versions of Firefox */
-    -ms-user-select: none; /* Internet Explorer/Edge */
-    user-select: none; /* Non-prefixed version, currently supported by Chrome, Edge, Opera and Firefox */
-}
 
 /* Main stylinq */
 
