@@ -1,5 +1,17 @@
 /* Main stylinq */
 
+.image-container {
+  width: 100%;
+  height: 250px;
+
+  border-bottom: 0.3rem solid rgb(0, 0, 0);
+
+  background-image: url("/images/hostina2.jpg");
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
 .main-container {
   padding-bottom: 2rem;
   margin: auto;
