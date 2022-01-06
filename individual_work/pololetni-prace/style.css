@@ -13,7 +13,7 @@ a:hover{
 }
 
 h1{
-    color: rgb(196, 95, 95);
+    color: rgb(62, 154, 207);
     font-size: 2rem;
 }
 
@@ -22,10 +22,10 @@ h2{
     font-size: 1.6rem;
 }
 
-/* Header */
+/* Header, footer */
 
-header{
-    background-color: rgb(53, 53, 53);
+header, footer{
+    background-color: rgb(65, 65, 65);
     height: 10vh;
     width: 100vw;
 
@@ -36,7 +36,7 @@ header{
     align-content: flex-start;
 }
 
-header nav{
+header > nav, footer .footer-container{
 
     margin: 0 2.5vw;
 
@@ -46,18 +46,17 @@ header nav{
     align-items: center;
     align-content: flex-start;
     gap: 2rem;
-
-    list-style-type: none;
 }
 
 /* Main stylinq */
 
 .main-container{
+    padding-bottom: 2rem;
     margin: auto;
     width: 90vw;
 
     display: flex;
-    flex-flow: row nowrap;
+    flex-flow: column nowrap;
     justify-content: center;
     align-items: flex-start;
     align-content: flex-start;
@@ -68,8 +67,6 @@ header nav{
     text-align: justify;
     padding-top: 2rem;
 }
-
-/* Text stylinq (h1, p, h2 etc.)*/
 
 .main-container > section h1, .main-container > section h2, .main-container > section p{
     margin-bottom: 1rem;
