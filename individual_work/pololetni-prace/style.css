@@ -12,6 +12,16 @@ a:hover{
     color: rgb(196, 95, 95);
 }
 
+h1{
+    color: rgb(196, 95, 95);
+    font-size: 2rem;
+}
+
+h2{
+    color: rgb(196, 95, 95);
+    font-size: 1.6rem;
+}
+
 /* Header */
 
 header{
@@ -42,15 +52,25 @@ header nav{
 
 /* Main stylinq */
 
-main{
-    margin: 1rem 3rem;
-    width: 80vw;
-    text-align: justify;
+.main-container{
+    margin: auto;
+    width: 90vw;
 
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: row nowrap;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     align-content: flex-start;
-    gap: 2rem;
+}
+
+.main-container > section{
+
+    text-align: justify;
+    padding-top: 2rem;
+}
+
+/* Text stylinq (h1, p, h2 etc.)*/
+
+.main-container > section h1, .main-container > section h2, .main-container > section p{
+    margin-bottom: 1rem;
 }
