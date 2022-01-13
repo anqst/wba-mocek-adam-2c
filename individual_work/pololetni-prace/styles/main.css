@@ -15,11 +15,13 @@ a:hover {
 h1 {
   color: rgb(136, 104, 17);
   font-size: 2rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 h2 {
   color: rgb(196, 95, 95);
   font-size: 1.6rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .noselect {
@@ -31,6 +33,68 @@ h2 {
   user-select: none; /* Non-prefixed version, currently supported by Chrome, Edge, Opera and Firefox */
 }
 
+/* Main stylinq */
+
+.image-container {
+  width: 100%;
+  height: 250px;
+
+  border-top: 0.3rem solid rgb(0, 0, 0);
+  border-bottom: 0.3rem solid rgb(0, 0, 0);
+  padding: 0rem 3rem;
+
+  background-image: url("/images/background-feast.jpg");
+  background-position: center; 
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  align-content: flex-start;
+}
+
+.image-container .title-container{
+
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  align-content: flex-start;
+}
+
+.image-container .title-container h1{
+  color: rgb(255, 255, 255);
+  font-size: 4rem;
+}
+
+
+.main-container {
+  padding-bottom: 2rem;
+  margin: auto;
+  width: 90vw;
+
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: flex-start;
+  align-content: flex-start;
+}
+
+.main-container > section {
+  text-align: justify;
+  padding-top: 2rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1.1rem;
+}
+
+.main-container > section h1,
+.main-container > section h2,
+.main-container > section p {
+  margin-bottom: 1rem;
+}
+
 /* Header, footer */
 
 header {
@@ -38,10 +102,8 @@ header {
   color: rgb(224, 224, 224);
   width: 100%;
 
-  border-bottom: 0.3rem solid rgb(0, 0, 0);
-
   display: flex;
-  flex-flow: row nowrap;
+  flex-flow: row wrap;
   justify-content: flex-start;
   align-items: center;
   align-content: flex-start;
@@ -62,8 +124,8 @@ footer {
   align-content: flex-start;
 }
 
-header > .header-container {
-  width: 90%;
+header > #navbar-container, header > #title-container {
+  width: 100%;
   margin: auto;
 
   padding: 1.2rem 0px;
@@ -76,8 +138,21 @@ header > .header-container {
   gap: 2rem;
 }
 
-header > .header-container > nav {
-  font-size: 1.2rem;
+header > #title-container{
+  width: 100%;
+  background-color: rgb(63, 45, 0);
+
+  color: rgb(224, 224, 224);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header > #title-container > div, header > #navbar-container > nav {
+  width: 90%;
+  margin: auto;
+  padding: 0.6rem 1rem;
+
+  color: rgb(224, 224, 224);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 
   display: flex;
   flex-flow: row nowrap;
@@ -85,6 +160,10 @@ header > .header-container > nav {
   align-items: center;
   align-content: flex-start;
   gap: 2rem;
+}
+
+header > #navbar-container > nav {
+  font-size: 1.2rem;
 }
 
 footer > .footer-container {
