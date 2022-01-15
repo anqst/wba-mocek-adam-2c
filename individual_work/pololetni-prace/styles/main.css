@@ -13,13 +13,13 @@ a:hover {
 }
 
 h1 {
-  color: rgb(136, 104, 17);
+  color: rgb(224, 224, 224);
   font-size: 2rem;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 h2 {
-  color: rgb(196, 95, 95);
+  color: rgb(224, 224, 224);
   font-size: 1.6rem;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
@@ -53,7 +53,7 @@ footer {
   width: 100%;
 
   border-top: 0.3rem solid rgb(0, 0, 0);
-  border-bottom: 1.6rem solid rgb(0, 0, 0);
+  border-bottom: 1.6rem solid rgb(63, 45, 0);
 
   display: flex;
   flex-flow: row nowrap;
@@ -62,11 +62,10 @@ footer {
   align-content: flex-start;
 }
 
-header > #navbar-container, header > #title-container {
+header > #navbar-container,
+header > #title-container {
   width: 100%;
-  margin: auto;
-
-  padding: 1.2rem 0px;
+  padding: 1.8rem 0px;
 
   display: flex;
   flex-flow: row nowrap;
@@ -76,7 +75,7 @@ header > #navbar-container, header > #title-container {
   gap: 2rem;
 }
 
-header > #title-container{
+header > #title-container {
   width: 100%;
   background-color: rgb(63, 45, 0);
 
@@ -84,10 +83,10 @@ header > #title-container{
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-header > #title-container > div, header > #navbar-container > nav {
-  width: 90%;
+header > #title-container > div,
+header > #navbar-container > nav {
+  width: 88%;
   margin: auto;
-  padding: 0.6rem 1rem;
 
   color: rgb(224, 224, 224);
   font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -140,7 +139,7 @@ footer .footer-container p {
   padding-bottom: 0.2rem;
 }
 
-/* Main stylinq */
+/* Main styling */
 
 .image-container {
   width: 100%;
@@ -148,34 +147,33 @@ footer .footer-container p {
 
   border-top: 0.3rem solid rgb(0, 0, 0);
   border-bottom: 0.3rem solid rgb(0, 0, 0);
-  padding: 0rem 3rem;
 
-  background-image: url("/images/background-feast.jpg");
-  background-position: center; 
+  background-image: url("/images/restaurant1.jpg");
+  background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 
+  position: relative;
+}
+
+.image-container .title-container {
+  height: 100%;
+  width: 100%;
+
   display: flex;
   flex-flow: row nowrap;
   justify-content: flex-start;
   align-items: center;
   align-content: flex-start;
+  padding: 3rem 5rem;
+
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0));
 }
 
-.image-container .title-container{
-
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: flex-start;
-  align-items: center;
-  align-content: flex-start;
+.image-container .title-container h1 {
+  color: rgb(224, 224, 224);
+  font-size: 5rem;
 }
-
-.image-container .title-container h1{
-  color: rgb(36, 40, 255);
-  font-size: 4rem;
-}
-
 
 .main-container {
   padding-bottom: 2rem;
@@ -187,6 +185,10 @@ footer .footer-container p {
   justify-content: center;
   align-items: flex-start;
   align-content: flex-start;
+}
+
+.main-container h2 {
+  color: rgb(196, 95, 95);
 }
 
 .main-container > section {
