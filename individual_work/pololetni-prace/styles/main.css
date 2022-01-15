@@ -24,6 +24,10 @@ h2 {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+img#homepage-icon {
+  height: 40px;
+}
+
 .noselect {
   -webkit-touch-callout: none; /* iOS Safari */
   -webkit-user-select: none; /* Safari */
@@ -36,9 +40,11 @@ h2 {
 /* Header, footer */
 
 header {
+  width: 100%;
+
   background-color: rgb(114, 82, 0);
   color: rgb(224, 224, 224);
-  width: 100%;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 
   display: flex;
   flex-flow: row wrap;
@@ -76,20 +82,14 @@ header > #title-container {
 }
 
 header > #title-container {
-  width: 100%;
   background-color: rgb(63, 45, 0);
-
-  color: rgb(224, 224, 224);
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1.5rem;
 }
 
 header > #title-container > div,
 header > #navbar-container > nav {
   width: 88%;
   margin: auto;
-
-  color: rgb(224, 224, 224);
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
 
   display: flex;
   flex-flow: row nowrap;
