@@ -1,0 +1,14 @@
+.image-gallery {
+  padding-top: 2rem;
+
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  align-content: flex-start;
+  gap: 3%;
+}
+
+.image-gallery img {
+  width: 30%;
+}
