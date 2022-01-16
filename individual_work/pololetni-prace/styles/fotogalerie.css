@@ -15,6 +15,14 @@
   position: relative;
 }
 
+.image-gallery > div div.shadowbox {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
 .image-gallery > div img {
   width: 100%;
 }
