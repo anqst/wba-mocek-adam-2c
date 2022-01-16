@@ -1,0 +1,30 @@
+.infobox-container {
+  padding-bottom: 2rem;
+  margin: auto;
+  width: 90vw;
+
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: flex-start;
+  align-content: flex-start;
+}
+
+.infobox-container h2 {
+  color: rgb(0, 0, 0);
+  text-decoration: underline;
+  font-size: 1.5rem;
+}
+
+.infobox-container > section {
+  text-align: justify;
+  padding-top: 2rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1.1rem;
+}
+
+.infobox-container > section h1,
+.infobox-container > section h2,
+.infobox-container > section p {
+  margin-bottom: 0.3rem;
+}

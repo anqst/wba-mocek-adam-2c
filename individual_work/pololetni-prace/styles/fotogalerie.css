@@ -1,5 +1,5 @@
 .image-gallery {
-  padding-top: 2rem;
+  margin-top: 4rem;
 
   -webkit-column-count: 4; /* split it into 5 columns */
   -moz-column-count: 4;
