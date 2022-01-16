@@ -148,7 +148,7 @@ footer .footer-container p {
   border-top: 0.3rem solid rgb(0, 0, 0);
   border-bottom: 0.3rem solid rgb(0, 0, 0);
 
-  background-image: url("/images/restaurant1.jpg");
+  background-image: url("../images/restaurant1.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
