@@ -40,7 +40,6 @@ img#homepage-icon {
 /* Header, footer */
 
 header {
-  width: 100%;
 
   background-color: rgb(114, 82, 0);
   color: rgb(224, 224, 224);
@@ -54,15 +53,16 @@ header {
 }
 
 footer {
+  padding: 0 1rem;
+
   background-color: rgb(114, 82, 0);
   color: rgb(224, 224, 224);
-  width: 100%;
 
   border-top: 0.3rem solid rgb(0, 0, 0);
   border-bottom: 1.6rem solid rgb(63, 45, 0);
 
   display: flex;
-  flex-flow: row nowrap;
+  flex-flow: row wrap;
   justify-content: flex-start;
   align-items: center;
   align-content: flex-start;
@@ -70,11 +70,10 @@ footer {
 
 header > #navbar-container,
 header > #title-container {
-  width: 100%;
-  padding: 1.8rem 0px;
+  padding: 1.8rem 1rem;
 
   display: flex;
-  flex-flow: row nowrap;
+  flex-flow: row wrap;
   justify-content: flex-start;
   align-items: center;
   align-content: flex-start;
@@ -88,11 +87,11 @@ header > #title-container {
 
 header > #title-container > div,
 header > #navbar-container > nav {
-  width: 88%;
-  margin: auto;
+/*   width: 88%; */
+/*   margin: auto; */
 
   display: flex;
-  flex-flow: row nowrap;
+  flex-flow: row wrap;
   justify-content: flex-start;
   align-items: center;
   align-content: flex-start;
@@ -104,13 +103,13 @@ header > #navbar-container > nav {
 }
 
 footer > .footer-container {
-  width: 90%;
+/*   width: 90%; */
   margin: auto;
 
   padding: 1.8rem 0rem;
 
   display: flex;
-  flex-flow: row nowrap;
+  flex-flow: row wrap;
   justify-content: space-between;
   align-items: flex-start;
   align-content: flex-start;
@@ -119,7 +118,7 @@ footer > .footer-container {
 
 footer > .footer-container > #footer-infobox {
   display: flex;
-  flex-flow: row nowrap;
+  flex-flow: row wrap;
   justify-content: flex-start;
   align-items: flex-start;
   align-content: flex-start;
