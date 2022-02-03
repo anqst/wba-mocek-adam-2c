@@ -8,6 +8,10 @@ body{
     color: rgb(230, 230, 230);
 }
 
+div{
+    box-sizing: border-box;
+}
+
 h1{
     margin: 0;
     padding: 2rem 0;
@@ -30,13 +34,14 @@ h1{
 
 .grid-1{
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
     gap: 40px;
+    grid-template-columns: repeat(3, 1fr);
 }
 
 .grid-item{
     background-color: rgb(63, 109, 161);
     padding: 1rem 1rem;
+    border: solid 0.2rem rgb(230, 230, 230);
     text-align: justify;
 }
 
