@@ -6,6 +6,7 @@ body{
     line-height: 1.5rem;
     color: rgb(230, 230, 230);
 }
+
 h1{
     margin: 0;
     padding: 1rem 0;
@@ -30,7 +31,7 @@ h1{
     text-align: justify;
 }
 
-/* .grid-item:first-child{
+.grid-item:first-child{
     grid-row-start: 1;
     grid-row-end: span 2;
 }
@@ -38,11 +39,32 @@ h1{
 .grid-item:last-child{
     grid-column-start: 2;
     grid-column-end: span 2;
-} */
+}
 
 @media only screen and (max-width: 768px){
 
+    .grid-item{
+        text-align: start;
+    }
+
     .grid-1{
         grid-template-columns: repeat(2, 1fr);
+    }
+
+    .grid-item:last-child{
+        grid-column-start: 2;
+        grid-column-end: span 1;
+    }
+}
+
+@media only screen and (max-width: 600px){
+
+    .grid-1{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .grid-item:last-child{
+        grid-column-start: 1;
+        grid-column-end: span 1;
     }
 }
