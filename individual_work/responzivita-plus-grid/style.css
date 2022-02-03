@@ -4,19 +4,28 @@ body{
 
     font-family: Arial, Helvetica, sans-serif;
     line-height: 1.5rem;
+    background-color: rgb(52, 164, 179);
     color: rgb(230, 230, 230);
 }
 
 h1{
     margin: 0;
-    padding: 1rem 0;
+    padding: 2rem 0;
+    border: solid 0.2rem rgb(230, 230, 230);
+
+    font-size: 1.5rem;
+    text-align: center;
 }
 
 .container-80{
     width: 80%;
     margin: 0 auto;
-    background-color: brown;
     padding: 1rem 1rem;
+
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    gap: 40px;
 }
 
 .grid-1{
@@ -26,7 +35,7 @@ h1{
 }
 
 .grid-item{
-    background-color: cadetblue;
+    background-color: rgb(63, 109, 161);
     padding: 1rem 1rem;
     text-align: justify;
 }
@@ -58,6 +67,10 @@ h1{
 }
 
 @media only screen and (max-width: 600px){
+
+    h1{
+        font-size: 1.3rem;
+    }
 
     body{
         font-size: 1.1rem;
