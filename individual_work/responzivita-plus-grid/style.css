@@ -35,7 +35,10 @@ h1{
 .grid-1{
     display: grid;
     gap: 40px;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: 
+    'first . .'
+    'first . .'
+    '. last last';
 }
 
 .grid-item{
@@ -46,13 +49,11 @@ h1{
 }
 
 .grid-item:first-child{
-    grid-row-start: 1;
-    grid-row-end: span 2;
+    grid-area: first;
 }
 
 .grid-item:last-child{
-    grid-column-start: 2;
-    grid-column-end: span 2;
+    grid-area: last;
 }
 
 @media only screen and (max-width: 768px){
@@ -62,6 +63,7 @@ h1{
     }
 
     .grid-1{
+        grid-template-areas: none;
         grid-template-columns: repeat(2, 1fr);
     }
 
