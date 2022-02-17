@@ -1,0 +1,40 @@
+.image-gallery {
+  margin-top: 4rem;
+  -webkit-column-count: 4;
+  /* split it into 5 columns */
+  column-count: 4;
+  -webkit-column-gap: 1rem;
+  /* give it a 5px gap between columns */
+  column-gap: 1rem;
+}
+
+.image-gallery > div {
+  margin-bottom: 1rem;
+  position: relative;
+}
+
+.image-gallery > div div.shadowbox {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.image-gallery > div img {
+  width: 100%;
+}
+
+.image-gallery > div h3 {
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.85)), to(rgba(0, 0, 0, 0)));
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0));
+  color: #e0e0e0;
+  text-align: center;
+  font-size: 1.2rem;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  padding: 0.7rem 0;
+  width: 100%;
+}
+/*# sourceMappingURL=foto.css.map */

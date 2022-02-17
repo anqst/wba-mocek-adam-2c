@@ -1,0 +1,13 @@
+body {
+  background-color: #aa0000;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.container #title {
+  font-size: 2rem;
+}
+
+.container .content p {
+  color: #ffffff;
+}
+/*# sourceMappingURL=style.css.map */
