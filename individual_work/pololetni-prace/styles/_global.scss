@@ -1,7 +1,10 @@
 @import "reset";
 /*  */
-$default-font: Arial, Helvetica, sans-serif;
-$heading-font: Verdana, Geneva, Tahoma, sans-serif;
+$default-font-size: 1.1rem;
+$default-line-height: 1.5rem;
+/*  */
+$default-font: Verdana, Geneva, Tahoma, sans-serif;
+$details-font: Arial, Helvetica, sans-serif;
 /*  */
 $primary-text-color: rgb(0, 0, 0);
 $secondary-text-color: rgb(224, 224, 224);
@@ -10,4 +13,12 @@ $action-text-color: rgb(196, 95, 95);
 $primary-background-color: rgb(200, 200, 200);
 $secondary-background-color: rgb(114, 82, 0);
 $secondary-background-color-dark: rgb(63, 45, 0);
+/*  */
+$wrap-border: solid 0.3rem rgb(0, 0, 0);
+$ending-border: solid 1.6rem $secondary-background-color-dark;
+/*  */
+@mixin default-container {
+  width: 90%;
+  margin: auto;
+}
 /*  */

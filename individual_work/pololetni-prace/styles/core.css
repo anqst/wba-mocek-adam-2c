@@ -97,12 +97,16 @@ select {
 /*  */
 /*  */
 /*  */
+/*  */
+/*  */
+/*  */
 /* Global */
 body {
   background-color: #c8c8c8;
   color: black;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 1rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1.1rem;
+  line-height: 1.5rem;
 }
 
 a:hover {
@@ -126,7 +130,6 @@ a:hover {
 /* Header */
 header {
   color: #e0e0e0;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -148,6 +151,10 @@ header #title-container {
   background-color: #3f2d00;
 }
 
+header #title-container div {
+  font-size: 1.5rem;
+}
+
 header #title-container img#homepage-icon {
   height: 40px;
 }
@@ -157,30 +164,13 @@ header #navbar-container {
 }
 
 header #navbar-container nav {
-  font-size: 1.2rem;
+  font-size: 1.3rem;
 }
 
 header > #navbar-container,
 header > #title-container {
   width: 100%;
   padding: 1.8rem 0rem;
-  font-size: 1.5rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: row wrap;
-          flex-flow: row wrap;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-line-pack: start;
-      align-content: flex-start;
-  gap: 2rem;
 }
 
 header > #title-container > div,
@@ -209,8 +199,8 @@ header > #navbar-container > nav {
 .image-container {
   width: 100%;
   height: 250px;
-  border-top: 0.3rem solid black;
-  border-bottom: 0.3rem solid black;
+  border-top: solid 0.3rem black;
+  border-bottom: solid 0.3rem black;
   background-image: url("../images/restaurant1.jpg");
   background-position: center;
   background-size: cover;
@@ -246,7 +236,6 @@ header > #navbar-container > nav {
 }
 
 .image-container .gradient .page-title h1 {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: #e0e0e0;
   font-size: 4rem;
 }
@@ -265,8 +254,6 @@ header > #navbar-container > nav {
 .main-container > section {
   text-align: justify;
   padding-top: 2rem;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 1.1rem;
 }
 
 .main-container > section h2,
@@ -276,11 +263,11 @@ header > #navbar-container > nav {
 
 /* Footer */
 footer {
-  padding: 0 1rem;
   background-color: #725200;
   color: #e0e0e0;
-  border-top: 0.3rem solid black;
-  border-bottom: 1.6rem solid #3f2d00;
+  font-family: Arial, Helvetica, sans-serif;
+  border-top: solid 0.3rem black;
+  border-bottom: solid 1.6rem #3f2d00;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -299,7 +286,7 @@ footer {
 }
 
 footer > .footer-container {
-  /*   width: 90%; */
+  width: 90%;
   margin: auto;
   padding: 1.8rem 0rem;
   display: -webkit-box;
@@ -312,12 +299,21 @@ footer > .footer-container {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -ms-flex-line-pack: start;
       align-content: flex-start;
   gap: 2rem;
+}
+
+footer > .footer-container h2 {
+  padding-bottom: 0.4rem;
+}
+
+footer > .footer-container p {
+  font-size: 1rem;
+  padding-bottom: 0.2rem;
 }
 
 footer > .footer-container > #footer-infobox {
@@ -343,13 +339,5 @@ footer > .footer-container > #copyright {
   font-size: 0.8rem;
   -ms-flex-item-align: end;
       align-self: flex-end;
-}
-
-footer .footer-container h2 {
-  padding-bottom: 0.4rem;
-}
-
-footer .footer-container p {
-  padding-bottom: 0.2rem;
 }
 /*# sourceMappingURL=core.css.map */
