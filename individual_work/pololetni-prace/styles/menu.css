@@ -1,9 +1,8 @@
 .food-container {
   width: 50vw;
   margin: auto;
-  margin-top: 5rem;
-  margin-bottom: 3rem;
 
+  color: rgb(0, 0, 0);
   border: 0.2rem dashed rgb(0, 0, 0);
 }
 
@@ -18,7 +17,6 @@
 
 .food-container .food-category-table {
   width: 100%;
-
   display: flex;
   flex-flow: column wrap;
   justify-content: flex-start;
@@ -27,9 +25,9 @@
 }
 
 .food-container .food-category-table .food-item {
-  position: relative;
-  padding: 0.2rem 1rem;
   width: 100%;
+  padding: 0.2rem 1rem;
+  position: relative;
 }
 
 .food-container .food-category-table div.food-item:nth-child(odd) {
@@ -43,11 +41,9 @@
 .food-container .food-category-table .food-item span:nth-child(2) {
   position: absolute;
   left: 5rem;
-  font-weight: bold;
 }
 
 .food-container .food-category-table .food-item span:nth-child(3) {
   position: absolute;
-  right: 0;
-  padding-right: 1rem;
+  right: 1rem;
 }

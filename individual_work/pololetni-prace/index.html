@@ -10,6 +10,8 @@
     <!-- Globální styly -->
     <link rel="stylesheet" href="styles/core.css" />
     <link rel="icon" href="images/icon.png" type="image/x-icon" />
+    <!--  Vlastní styly -->
+    <link rel="stylesheet" href="styles/index.css" />
   </head>
 
   <body>
@@ -28,31 +30,32 @@
           <h6>Na Ostrově 9/2, Beroun</h6>
         </div>
       </div>
-      <div id="navbar-container">
-        <nav>
-          <span><a href="index.html">O nás</a></span>
-          <span><a href="pages/menu.html">Meníčko</a></span>
-          <span><a href="pages/fotogalerie.html">Fotogalerie</a></span>
-          <span><a href="pages/kontakt.html">Kontakt</a></span>
-        </nav>
-      </div>
+      <nav>
+        <ul>
+          <li class="current"><a href="index.html">O nás</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="fotogalerie.html">Fotogalerie</a></li>
+          <li><a href="kontakt.html">Kontakt</a></li>
+        </ul>
+      </nav>
     </header>
     <!-- Header -->
 
-    <!-- Content -->
-    <main>
-      <div class="image-container">
-        <div class="gradient">
-          <div class="page-title">
-            <h1>O nás</h1>
-          </div>
+    <!-- Image container -->
+    <div class="image-container">
+      <div class="gradient">
+        <div class="page-title">
+          <h1>O nás</h1>
         </div>
       </div>
+    </div>
+    <!-- Image container -->
 
+    <!-- Content -->
+    <main>
       <div class="main-container">
         <section>
           <h2>Prodáváme jídlo</h2>
-
           <p>
             A vy chcete jídlo. Kdo nechce jídlo. Nabízíme přátelské posezení
             venku i uvnitř (unvnitř pouze za drobný příplatek, jehož výši
@@ -60,7 +63,6 @@
             těžší ho najít). Kromě jídla máme i pestrou nabídku nápojů, drog a
             poloautomatických zbraní.
           </p>
-
           <p>
             Námi vykraftěné jídlo je kvalitní jídlo, k jeho výrobě totiž
             používáme kvalitní suroviny a kvalitní zaměstnance (či jejich části.
@@ -74,7 +76,6 @@
 
         <section>
           <h2>Jsme tu již od roku 1337</h2>
-
           <p>
             Vskutku, naše restaurace má dlouhou, pestrou a poměrně krvavou
             historii. Beroun se stal královským městem v roce 1303, nu a o pár
@@ -86,7 +87,6 @@
             psát, k jídlu se tato historka nehodí.
             <!-- https://www.mesto-beroun.cz/o-beroune/kratce-z-historie/ -->
           </p>
-
           <p>
             No prostě, abychom to trochu zkrátili, protože tahle nudná historie
             stejně nikoho nezajímá, na místě původního hostince byla postavena
@@ -107,7 +107,6 @@
 
     <!-- Footer -->
     <footer>
-      <!-- Otv. doba -->
       <div class="footer-container">
         <div id="footer-infobox">
           <div>
@@ -115,14 +114,12 @@
             <p>Po-Pá: 5:00 - 23:00 hod.</p>
             <p>So-Ne, svátky: 6:00 - 22:00 hod.</p>
           </div>
-          <!-- Adresa -->
           <div>
             <h2>Adresa</h2>
             <p>Na Ostrově 9/2, Beroun 266 01</p>
             <p>Tel.: <strong>+420 725 410 279</strong></p>
           </div>
         </div>
-        <!-- Copyright -->
         <div id="copyright">
           <p>Copyright &#169; Adam Mocek 2022, All Rights Reserved</p>
           <p><em>Cena vnitřního posezení: 50 Kč / os. / hod.</em></p>

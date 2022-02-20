@@ -99,7 +99,6 @@ select {
 /*  */
 /*  */
 /*  */
-/*  */
 /* Global */
 body {
   background-color: #c8c8c8;
@@ -114,17 +113,10 @@ a:hover {
 }
 
 .noselect {
-  -webkit-touch-callout: none;
-  /* iOS Safari */
   -webkit-user-select: none;
-  /* Safari */
-  /* Konqueror HTML */
-  -moz-user-select: none;
-  /* Old versions of Firefox */
-  -ms-user-select: none;
-  /* Internet Explorer/Edge */
-  user-select: none;
-  /* Non-prefixed version, currently supported by Chrome, Edge, Opera and Firefox */
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 
 /* Header */
@@ -159,22 +151,27 @@ header #title-container img#homepage-icon {
   height: 40px;
 }
 
-header #navbar-container {
+header nav {
+  font-size: 1.3rem;
   background-color: #725200;
 }
 
-header #navbar-container nav {
-  font-size: 1.3rem;
+header nav ul li {
+  padding-bottom: 0.2rem;
 }
 
-header > #navbar-container,
+header nav ul li.current {
+  border-bottom: solid 0.1rem #e0e0e0;
+}
+
+header > nav,
 header > #title-container {
   width: 100%;
   padding: 1.8rem 0rem;
 }
 
 header > #title-container > div,
-header > #navbar-container > nav {
+header > nav > ul {
   width: 90%;
   margin: auto;
   display: -webkit-box;
@@ -215,9 +212,9 @@ header > #navbar-container > nav {
 }
 
 .image-container .gradient .page-title {
-  height: 100%;
   width: 90%;
   margin: auto;
+  height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -244,21 +241,12 @@ header > #navbar-container > nav {
 .main-container {
   width: 90%;
   margin: auto;
-  padding-bottom: 2rem;
-}
-
-.main-container h2 {
-  color: #c45f5f;
+  margin-bottom: 2rem;
 }
 
 .main-container > section {
   text-align: justify;
-  padding-top: 2rem;
-}
-
-.main-container > section h2,
-.main-container > section p {
-  margin-bottom: 1rem;
+  margin-top: 2rem;
 }
 
 /* Footer */
@@ -268,21 +256,6 @@ footer {
   font-family: Arial, Helvetica, sans-serif;
   border-top: solid 0.3rem black;
   border-bottom: solid 1.6rem #3f2d00;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: row wrap;
-          flex-flow: row wrap;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-line-pack: start;
-      align-content: flex-start;
 }
 
 footer > .footer-container {
@@ -316,7 +289,7 @@ footer > .footer-container p {
   padding-bottom: 0.2rem;
 }
 
-footer > .footer-container > #footer-infobox {
+footer > .footer-container #footer-infobox {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -335,9 +308,12 @@ footer > .footer-container > #footer-infobox {
   gap: 5rem;
 }
 
-footer > .footer-container > #copyright {
-  font-size: 0.8rem;
+footer > .footer-container #copyright {
   -ms-flex-item-align: end;
       align-self: flex-end;
+}
+
+footer > .footer-container #copyright p {
+  font-size: 0.8rem;
 }
 /*# sourceMappingURL=core.css.map */

@@ -6,10 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Kontakt - Restaurace Miresa</title>
     <!-- Globální styly -->
-    <link rel="stylesheet" href="../styles/core.css">
-    <link rel="icon" href="../images/icon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="styles/core.css" />
+    <link rel="icon" href="images/icon.png" type="image/x-icon" />
     <!--  Vlastní styly -->
-    <link rel="stylesheet" href="../styles/kontakt.css" />
+    <link rel="stylesheet" href="styles/kontakt.css" />
   </head>
 
   <body>
@@ -17,10 +17,10 @@
     <header>
       <div id="title-container">
         <div>
-          <a href="../index.html"
+          <a href="index.html"
             ><img
               class="noselect"
-              src="../images/icon.png"
+              src="images/icon.png"
               alt="miresa-logo"
               id="homepage-icon"
           /></a>
@@ -28,26 +28,30 @@
           <h6>Na Ostrově 9/2, Beroun</h6>
         </div>
       </div>
-      <div id="navbar-container">
-        <nav>
-          <span><a href="../index.html">O nás</a></span>
-          <span><a href="../pages/menu.html">Meníčko</a></span>
-          <span><a href="../pages/fotogalerie.html">Fotogalerie</a></span>
-          <span><a href="../pages/kontakt.html">Kontakt</a></span>
-        </nav>
-      </div>
+      <nav>
+        <ul>
+          <li><a href="index.html">O nás</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="fotogalerie.html">Fotogalerie</a></li>
+          <li class="current"><a href="kontakt.html">Kontakt</a></li>
+        </ul>
+      </nav>
     </header>
     <!-- Header -->
 
-    <!-- Content -->
-    <main>
-      <div class="image-container">
-        <div class="title-container">
+    <!-- Image container -->
+    <div class="image-container">
+      <div class="gradient">
+        <div class="page-title">
           <h1>Kontakt</h1>
         </div>
       </div>
+    </div>
+    <!-- Image container -->
 
-      <div class="infobox-container">
+    <!-- Content -->
+    <main>
+      <div class="main-container">
         <section>
           <h2>Otevírací doba:</h2>
           <p>Po-Pá: 5:00 - 23:00 hod.</p>
@@ -76,7 +80,6 @@
 
     <!-- Footer -->
     <footer>
-      <!-- Otv. doba -->
       <div class="footer-container">
         <div id="footer-infobox">
           <div>
@@ -84,14 +87,12 @@
             <p>Po-Pá: 5:00 - 23:00 hod.</p>
             <p>So-Ne, svátky: 6:00 - 22:00 hod.</p>
           </div>
-          <!-- Adresa -->
           <div>
             <h2>Adresa</h2>
             <p>Na Ostrově 9/2, Beroun 266 01</p>
             <p>Tel.: <strong>+420 725 410 279</strong></p>
           </div>
         </div>
-        <!-- Copyright -->
         <div id="copyright">
           <p>Copyright &#169; Adam Mocek 2022, All Rights Reserved</p>
           <p><em>Cena vnitřního posezení: 50 Kč / os. / hod.</em></p>

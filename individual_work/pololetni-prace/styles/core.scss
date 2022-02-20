@@ -1,4 +1,5 @@
-@import "global";
+@import "reset";
+@import "config";
 
 /* Global */
 
@@ -6,7 +7,6 @@ body {
   background-color: $primary-background-color;
   color: $primary-text-color;
   font-family: $default-font;
-
   font-size: $default-font-size;
   line-height: $default-line-height;
 }
@@ -16,12 +16,7 @@ a:hover {
 }
 
 .noselect {
-  -webkit-touch-callout: none; /* iOS Safari */
-  -webkit-user-select: none; /* Safari */
-  -khtml-user-select: none; /* Konqueror HTML */
-  -moz-user-select: none; /* Old versions of Firefox */
-  -ms-user-select: none; /* Internet Explorer/Edge */
-  user-select: none; /* Non-prefixed version, currently supported by Chrome, Edge, Opera and Firefox */
+  user-select: none;
 }
 
 /* Header */
@@ -47,23 +42,28 @@ header {
     }
   }
 
-  #navbar-container {
+  nav {
+    font-size: 1.3rem;
     background-color: $secondary-background-color;
 
-    nav {
-      font-size: 1.3rem;
+    ul li {
+      padding-bottom: 0.2rem;
+    }
+
+    ul li.current {
+      border-bottom: $text-underline;
     }
   }
 }
 
-header > #navbar-container,
+header > nav,
 header > #title-container {
   width: 100%;
   padding: 1.8rem 0rem;
 }
 
 header > #title-container > div,
-header > #navbar-container > nav {
+header > nav > ul {
   @include default-container;
 
   display: flex;
@@ -94,9 +94,8 @@ header > #navbar-container > nav {
     background: linear-gradient(to top, rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0));
 
     .page-title {
+      @include default-container;
       height: 100%;
-      width: 90%;
-      margin: auto;
 
       display: flex;
       flex-flow: row nowrap;
@@ -116,21 +115,12 @@ header > #navbar-container > nav {
 
 .main-container {
   @include default-container;
-  padding-bottom: 2rem;
-}
-
-.main-container h2 {
-  color: $action-text-color;
+  margin-bottom: 2rem;
 }
 
 .main-container > section {
   text-align: justify;
-  padding-top: 2rem;
-}
-
-.main-container > section h2,
-.main-container > section p {
-  margin-bottom: 1rem;
+  margin-top: 2rem;
 }
 
 /* Footer */
@@ -142,12 +132,6 @@ footer {
 
   border-top: $wrap-border;
   border-bottom: $ending-border;
-
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: flex-start;
-  align-items: center;
-  align-content: flex-start;
 }
 
 footer > .footer-container {
@@ -169,18 +153,21 @@ footer > .footer-container {
     font-size: 1rem;
     padding-bottom: 0.2rem;
   }
-}
 
-footer > .footer-container > #footer-infobox {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: flex-start;
-  align-items: flex-start;
-  align-content: flex-start;
-  gap: 5rem;
-}
+  #footer-infobox {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    align-content: flex-start;
+    gap: 5rem;
+  }
 
-footer > .footer-container > #copyright {
-  font-size: 0.8rem;
-  align-self: flex-end;
+  #copyright {
+    align-self: flex-end;
+
+    p {
+      font-size: 0.8rem;
+    }
+  }
 }
