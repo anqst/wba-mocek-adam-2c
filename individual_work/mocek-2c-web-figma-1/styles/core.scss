@@ -1,2 +1,82 @@
 @import "reset";
 @import "config";
+
+// Global
+
+body{
+    font-family: $primary-font;
+    color: $primary-text-color;
+}
+
+img{
+    height: 100%;
+}
+
+.container{
+    @include container;
+}
+
+.color-cover{
+    background-color: $secondary-backgroud-color;
+}
+
+// Header, footer
+
+header{
+    .color-cover{
+        
+        height: 80px;
+
+        .container{
+
+            height: 100%;
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: space-between;
+            align-items: center;
+            align-content: flex-start;
+
+            #logo{
+                height: 100%;
+            }
+
+            #mobile-logo{
+                height: 100%;
+            }
+        }
+    }
+}
+
+footer{
+    .color-cover{
+
+        height: 88px;
+
+        .container{
+
+            height: 100%;
+            display: flex;
+            flex-flow: column nowrap;
+            justify-content: center;
+            align-items: center;
+            align-content: flex-start;
+
+            #final-text{
+
+                display: flex;
+                flex-flow: row wrap;
+                justify-content: flex-start;
+                align-items: center;
+                align-content: flex-start;
+                gap: 0.2rem;
+
+                p{
+                    @include upper-case;
+                    width: 100%;
+                    text-align: center;
+                    font-weight: 500;
+                }
+            }
+        }
+    }
+}
