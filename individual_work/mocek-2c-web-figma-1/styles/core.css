@@ -116,11 +116,15 @@ img {
   background-color: #CBC1B1;
 }
 
-header .color-cover {
+.desktop-only {
+  display: none;
+}
+
+header div.color-cover {
   height: 80px;
 }
 
-header .color-cover .container {
+header div.color-cover div.container {
   height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -139,19 +143,19 @@ header .color-cover .container {
       align-content: flex-start;
 }
 
-header .color-cover .container #logo {
+header div.color-cover div.container div#logo {
   height: 100%;
 }
 
-header .color-cover .container #mobile-logo {
+header div.color-cover div.container nav#navbar div#mobile-logo {
   height: 100%;
 }
 
-footer .color-cover {
+footer div.color-cover {
   height: 88px;
 }
 
-footer .color-cover .container {
+footer div.color-cover div.container {
   height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -170,7 +174,7 @@ footer .color-cover .container {
       align-content: flex-start;
 }
 
-footer .color-cover .container #final-text {
+footer div.color-cover div.container div#final-text {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -189,10 +193,41 @@ footer .color-cover .container #final-text {
   gap: 0.2rem;
 }
 
-footer .color-cover .container #final-text p {
+footer div.color-cover div.container div#final-text p {
   text-transform: uppercase;
   width: 100%;
   text-align: center;
   font-weight: 500;
+}
+
+@media screen and (min-width: 426px) {
+  .mobile-only {
+    display: none;
+  }
+  ul#desktop-navigation {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-line-pack: start;
+        align-content: flex-start;
+    gap: 0.4rem;
+  }
+  ul#desktop-navigation li {
+    padding: 0.4rem;
+    text-transform: uppercase;
+  }
+  ul#desktop-navigation li.current {
+    background-color: rgba(124, 116, 116, 0.3);
+  }
 }
 /*# sourceMappingURL=core.css.map */

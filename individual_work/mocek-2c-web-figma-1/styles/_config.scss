@@ -1,9 +1,8 @@
+//
 // COLORS
 $primary-backgroud-color: #E5E5E5;
 $secondary-backgroud-color: #CBC1B1;
-//
 $input-color: #7C7474;
-//
 $primary-text-color: #000000;
 $secondary-text-color: #F8F7EC;
 //
@@ -12,8 +11,7 @@ $primary-font: 'Lato', sans-serif;
 //
 // MIXINS
 @mixin transparent-input {
-    background-color: $input-color;
-    opacity: 0.3;
+    background-color: rgba($color: $input-color, $alpha: 0.3);
 }
 @mixin container {
     width: 80%;
