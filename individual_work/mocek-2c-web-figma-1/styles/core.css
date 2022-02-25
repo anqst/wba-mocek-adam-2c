@@ -151,6 +151,10 @@ header div.color-cover div.container nav#navbar div#mobile-logo {
   height: 100%;
 }
 
+ul#desktop-navigation {
+  display: none;
+}
+
 footer div.color-cover {
   height: 88px;
 }
