@@ -43,11 +43,16 @@ button.prompt-button{
 
 .container{
     @include container;
+}
+
+.container.main-container{
+    padding: 3rem 0;
     display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
     align-items: center;
     align-content: flex-start;
+    gap: 50px;
 }
 
 .color-cover{
@@ -62,11 +67,11 @@ button.prompt-button{
 // Header, footer
 
 header{
-    div.color-cover{
+    .color-cover{
         
         height: 80px;
 
-        div.container{
+        .container{
 
             height: 100%;
             display: flex;
@@ -94,11 +99,11 @@ ul#desktop-navigation{
 }
 
 footer{
-    div.color-cover{
+    .color-cover{
 
         height: 88px;
 
-        div.container{
+        .container{
 
             height: 100%;
             display: flex;
@@ -110,7 +115,7 @@ footer{
             div#final-text{
 
                 display: flex;
-                flex-flow: row wrap;
+                flex-flow: column nowrap;
                 justify-content: flex-start;
                 align-items: center;
                 align-content: flex-start;
@@ -118,7 +123,6 @@ footer{
 
                 p{
                     @include upper-case;
-                    width: 100%;
                     text-align: center;
                     font-weight: 500;
                 }

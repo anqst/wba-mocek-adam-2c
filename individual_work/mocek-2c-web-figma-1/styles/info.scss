@@ -1,7 +1,6 @@
 @import "config";
 
 // Main
-
 .container{
 
     #information-slideshow{
@@ -32,7 +31,13 @@
 @media screen and (min-width: 426px) {
 
     .container #information-slideshow{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
 
+@media screen and (min-width: 769px) {
+
+    .container #information-slideshow{
         grid-template-columns: repeat(3, 1fr);
     }
 }

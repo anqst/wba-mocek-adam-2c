@@ -154,21 +154,26 @@ button.prompt-button {
 .container {
   width: 80%;
   margin: auto;
+}
+
+.container.main-container {
+  padding: 3rem 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-flow: row wrap;
-          flex-flow: row wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   -ms-flex-line-pack: start;
       align-content: flex-start;
+  gap: 50px;
 }
 
 .color-cover {
@@ -180,11 +185,11 @@ button.prompt-button {
   display: none;
 }
 
-header div.color-cover {
+header .color-cover {
   height: 80px;
 }
 
-header div.color-cover div.container {
+header .color-cover .container {
   height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -203,11 +208,11 @@ header div.color-cover div.container {
       align-content: flex-start;
 }
 
-header div.color-cover div.container div#logo {
+header .color-cover .container div#logo {
   height: 100%;
 }
 
-header div.color-cover div.container nav#navbar div#mobile-logo {
+header .color-cover .container nav#navbar div#mobile-logo {
   height: 100%;
 }
 
@@ -215,11 +220,11 @@ ul#desktop-navigation {
   display: none;
 }
 
-footer div.color-cover {
+footer .color-cover {
   height: 88px;
 }
 
-footer div.color-cover div.container {
+footer .color-cover .container {
   height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -238,14 +243,14 @@ footer div.color-cover div.container {
       align-content: flex-start;
 }
 
-footer div.color-cover div.container div#final-text {
+footer .color-cover .container div#final-text {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-flow: row wrap;
-          flex-flow: row wrap;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
@@ -257,9 +262,8 @@ footer div.color-cover div.container div#final-text {
   gap: 0.2rem;
 }
 
-footer div.color-cover div.container div#final-text p {
+footer .color-cover .container div#final-text p {
   text-transform: uppercase;
-  width: 100%;
   text-align: center;
   font-weight: 500;
 }

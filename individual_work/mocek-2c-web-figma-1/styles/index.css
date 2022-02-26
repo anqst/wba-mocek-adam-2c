@@ -1,1 +1,135 @@
-/* No CSS *//*# sourceMappingURL=index.css.map */
+#trailer {
+  width: 80%;
+  margin: auto;
+  padding: 1rem 1rem;
+}
+
+#trailer #trailer-box {
+  color: #F8F7EC;
+  background-color: #7C7474;
+  padding: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: start;
+      align-content: flex-start;
+  gap: 20px;
+}
+
+#trailer #trailer-box h2 {
+  text-transform: uppercase;
+}
+
+#trailer #trailer-box button {
+  color: #000000;
+  background-color: rgba(248, 247, 236, 0.3);
+}
+
+.container #slideshow-introduction {
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.container #image-slideshow {
+  display: -ms-grid;
+  display: grid;
+  gap: 20px;
+  -ms-grid-columns: (1fr)[1];
+      grid-template-columns: repeat(1, 1fr);
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.container #image-slideshow .flex-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-line-pack: start;
+      align-content: flex-start;
+  gap: 20px;
+}
+
+@media screen and (min-width: 426px) {
+  .container #image-slideshow {
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+  }
+  .container #image-slideshow .flex-item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column nowrap;
+            flex-flow: column nowrap;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -ms-flex-line-pack: start;
+        align-content: flex-start;
+    gap: 20px;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  #trailer {
+    background-image: url("/images/hero-image.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 919px;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    -ms-flex-line-pack: end;
+        align-content: flex-end;
+    gap: 20px;
+  }
+  #trailer #trailer-box {
+    width: 50%;
+    background-color: rgba(124, 116, 116, 0.3);
+  }
+  #trailer #trailer-box h2, #trailer #trailer-box p {
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+  #trailer #trailer-box button {
+    color: #F8F7EC;
+    background-color: #7C7474;
+  }
+}
+/*# sourceMappingURL=index.css.map */
