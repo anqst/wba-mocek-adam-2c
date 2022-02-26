@@ -4,14 +4,7 @@
 
 .container{
 
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    align-items: center;
-    align-content: flex-start;
-
     #information-slideshow{
-
         display: grid;
         gap: 60px;
         padding: 180px 0;
@@ -21,7 +14,6 @@
     
     
         div.flex-item{
-    
             display: flex;
             flex-flow: row wrap;
             justify-content: flex-start;

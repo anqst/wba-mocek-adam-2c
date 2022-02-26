@@ -7,14 +7,47 @@ body{
     background-color: $primary-backgroud-color;
     font-family: $primary-font;
     color: $primary-text-color;
+    opacity: 0.9;
+}
+
+a:hover{
+    color: #777777;
+}
+
+a:active{
+    color: #CCCCCC;
 }
 
 img{
     height: 100%;
 }
 
+::placeholder{
+    color: $primary-text-color;
+    opacity: 1;
+}
+
+input, textarea{
+    color: $primary-text-color;
+    @include transparent-input;
+    padding: 0.4rem 0.6rem;
+}
+
+button.prompt-button{
+    @include upper-case;
+    background-color: $input-color;
+    color: $secondary-text-color;
+    box-shadow: 0px 5px 5px 0px rgba($color: $input-color, $alpha: 0.7) ;
+    padding: 0.4rem 1rem;
+}
+
 .container{
     @include container;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: flex-start;
 }
 
 .color-cover{
@@ -95,7 +128,7 @@ footer{
 }
 
 // Media queries
-@media screen and (min-width: 426px) {
+@media screen and (min-width: 769px) {
 
     .mobile-only{
         display: none;
