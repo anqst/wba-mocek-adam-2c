@@ -5,9 +5,11 @@
 
 body{
     background-color: $primary-backgroud-color;
-    font-family: $primary-font;
     color: $primary-text-color;
-    opacity: 0.9;
+    font-family: $primary-font;
+    font-style: normal;
+    font-weight: 500;
+    letter-spacing: 0.1em;
 }
 
 a:hover{
@@ -37,6 +39,8 @@ button.prompt-button{
     @include upper-case;
     background-color: $input-color;
     color: $secondary-text-color;
+    font-weight: 600;
+
     box-shadow: 0px 5px 10px 0px rgba($color: rgb(0,0,0), $alpha: 0.5) ;
     padding: 0.4rem 1rem;
 }
@@ -96,6 +100,10 @@ header{
 
 ul#desktop-navigation{
     display: none;
+}
+
+ul#desktop-navigation, h2, h3{
+    font-weight: bold;
 }
 
 footer{

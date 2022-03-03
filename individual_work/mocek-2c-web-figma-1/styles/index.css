@@ -78,6 +78,10 @@
   text-transform: uppercase;
 }
 
+.container #image-slideshow .flex-item .item-text p {
+  font-weight: 300;
+}
+
 @media screen and (min-width: 769px) {
   .container #image-slideshow {
     -ms-grid-columns: (1fr)[3];

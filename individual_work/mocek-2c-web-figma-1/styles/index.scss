@@ -57,9 +57,14 @@
                 width: 117px;
             } */
 
-            .item-text h3{
-                @include upper-case;
-            }
+            .item-text{
+                h3{
+                    @include upper-case;
+                }
+                p{
+                    font-weight: 300;
+                }
+            } 
         }
     }
 }
