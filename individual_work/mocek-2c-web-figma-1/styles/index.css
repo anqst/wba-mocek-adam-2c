@@ -70,7 +70,11 @@
   gap: 20px;
 }
 
-@media screen and (min-width: 426px) {
+.container #image-slideshow .flex-item .item-text h3 {
+  text-transform: uppercase;
+}
+
+@media screen and (min-width: 769px) {
   .container #image-slideshow {
     -ms-grid-columns: (1fr)[3];
         grid-template-columns: repeat(3, 1fr);
@@ -93,9 +97,6 @@
         align-content: flex-start;
     gap: 20px;
   }
-}
-
-@media screen and (min-width: 769px) {
   #trailer {
     background-image: url("/images/hero-image.svg");
     background-repeat: no-repeat;

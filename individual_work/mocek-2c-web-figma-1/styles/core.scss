@@ -132,7 +132,20 @@ footer{
 }
 
 // Media queries
+
 @media screen and (min-width: 769px) {
+
+    header{
+        .color-cover{
+            height: 150px;
+        }
+    }
+
+    footer{
+        .color-cover{
+            height: 150px;
+        }
+    }
 
     .mobile-only{
         display: none;

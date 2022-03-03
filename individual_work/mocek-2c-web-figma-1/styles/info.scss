@@ -6,7 +6,7 @@
     #information-slideshow{
         display: grid;
         gap: 60px;
-        padding: 180px 0;
+        padding: 140px 0;
       
         grid-template-columns: repeat(1, 1fr);
         justify-content: center;
@@ -14,7 +14,7 @@
     
         div.flex-item{
             display: flex;
-            flex-flow: row wrap;
+            flex-flow: row nowrap;
             justify-content: flex-start;
             align-items: center;
             align-content: flex-start;
@@ -28,13 +28,6 @@
 }
 
 // Media queries
-@media screen and (min-width: 426px) {
-
-    .container #information-slideshow{
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-
 @media screen and (min-width: 769px) {
 
     .container #information-slideshow{

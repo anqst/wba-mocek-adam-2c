@@ -2,7 +2,7 @@
   display: -ms-grid;
   display: grid;
   gap: 60px;
-  padding: 180px 0;
+  padding: 140px 0;
   -ms-grid-columns: (1fr)[1];
       grid-template-columns: repeat(1, 1fr);
   -webkit-box-pack: center;
@@ -16,8 +16,8 @@
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-flow: row wrap;
-          flex-flow: row wrap;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
@@ -31,13 +31,6 @@
 
 .container #information-slideshow div.flex-item div.item-text {
   text-transform: uppercase;
-}
-
-@media screen and (min-width: 426px) {
-  .container #information-slideshow {
-    -ms-grid-columns: (1fr)[2];
-        grid-template-columns: repeat(2, 1fr);
-  }
 }
 
 @media screen and (min-width: 769px) {

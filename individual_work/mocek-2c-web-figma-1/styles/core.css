@@ -98,7 +98,7 @@ select {
 }
 
 body {
-  background-color: #E5E5E5;
+  background-color: #EEEDE9;
   font-family: "Lato", sans-serif;
   color: #000000;
   opacity: 0.9;
@@ -269,6 +269,12 @@ footer .color-cover .container div#final-text p {
 }
 
 @media screen and (min-width: 769px) {
+  header .color-cover {
+    height: 150px;
+  }
+  footer .color-cover {
+    height: 150px;
+  }
   .mobile-only {
     display: none;
   }
