@@ -146,8 +146,8 @@ button.prompt-button {
   text-transform: uppercase;
   background-color: #7C7474;
   color: #F8F7EC;
-  -webkit-box-shadow: 0px 5px 5px 0px rgba(124, 116, 116, 0.7);
-          box-shadow: 0px 5px 5px 0px rgba(124, 116, 116, 0.7);
+  -webkit-box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+          box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
   padding: 0.4rem 1rem;
 }
 

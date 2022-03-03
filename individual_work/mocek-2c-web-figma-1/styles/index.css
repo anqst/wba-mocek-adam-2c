@@ -68,6 +68,10 @@
   -ms-flex-line-pack: start;
       align-content: flex-start;
   gap: 20px;
+  /*             .item-image{
+                height: 117px;
+                width: 117px;
+            } */
 }
 
 .container #image-slideshow .flex-item .item-text h3 {
