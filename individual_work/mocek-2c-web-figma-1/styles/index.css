@@ -1,13 +1,14 @@
 #trailer {
   width: 80%;
   margin: auto;
-  padding: 1rem 1rem;
+  padding: 0px;
 }
 
 #trailer #trailer-box {
   color: #F8F7EC;
   background-color: #7C7474;
   padding: 1rem;
+  margin-top: 50px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -23,11 +24,17 @@
           align-items: center;
   -ms-flex-line-pack: start;
       align-content: flex-start;
-  gap: 20px;
+  gap: 28px;
 }
 
 #trailer #trailer-box h2 {
+  font-size: 1.25rem;
   text-transform: uppercase;
+}
+
+#trailer #trailer-box p {
+  font-size: 0.8125rem;
+  text-align: start;
 }
 
 #trailer #trailer-box button {
@@ -107,11 +114,13 @@
   }
   #trailer {
     background-image: url("/images/hero-image.svg");
+    background-color: #bfffea;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    height: 919px;
+    height: 769px;
     width: 100%;
+    padding: 30px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -130,10 +139,16 @@
     gap: 20px;
   }
   #trailer #trailer-box {
-    width: 50%;
+    width: 650px;
+    height: 350px;
     background-color: rgba(124, 116, 116, 0.3);
   }
-  #trailer #trailer-box h2, #trailer #trailer-box p {
+  #trailer #trailer-box h2 {
+    font-size: 3rem;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+  #trailer #trailer-box p {
+    font-size: 1.5rem;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   }
   #trailer #trailer-box button {

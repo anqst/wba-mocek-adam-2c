@@ -3,13 +3,19 @@
 
 // Global
 
+*{
+    letter-spacing: 0.1rem;
+}
+
 body{
     background-color: $primary-backgroud-color;
     color: $primary-text-color;
     font-family: $primary-font;
+
     font-style: normal;
+    font-size: medium;
     font-weight: 500;
-    letter-spacing: 0.1em;
+    line-height: 1.5;
 }
 
 a:hover{
@@ -39,10 +45,11 @@ button.prompt-button{
     @include upper-case;
     background-color: $input-color;
     color: $secondary-text-color;
-    font-weight: 600;
 
+    font-size: 0.6875rem;
+    font-weight: 600;
     box-shadow: 0px 5px 10px 0px rgba($color: rgb(0,0,0), $alpha: 0.5) ;
-    padding: 0.4rem 1rem;
+    padding: 0.6rem 1.5rem;
 }
 
 .container{
@@ -50,7 +57,7 @@ button.prompt-button{
 }
 
 .container.main-container{
-    padding: 3rem 0;
+    padding: 50px 0;
     display: flex;
     flex-flow: column nowrap;
     justify-content: flex-start;
@@ -142,6 +149,10 @@ footer{
 // Media queries
 
 @media screen and (min-width: 769px) {
+
+    button.prompt-button{
+        font-size: 1.125rem;
+    }
 
     header{
         .color-cover{
