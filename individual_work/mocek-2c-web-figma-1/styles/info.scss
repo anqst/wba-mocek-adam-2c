@@ -6,13 +6,13 @@
     #information-slideshow{
         display: grid;
         gap: 60px;
-        padding: 140px 0;
+        padding: 30px 0;
       
         grid-template-columns: repeat(1, 1fr);
         justify-content: center;
     
     
-        div.flex-item{
+        .flex-item{
             display: flex;
             flex-flow: row nowrap;
             justify-content: flex-start;
@@ -20,7 +20,8 @@
             align-content: flex-start;
             gap: 1rem;
     
-            div.item-text{
+            .item-text{
+                font-size: 0.75rem;
                 @include upper-case;
             }
         }
@@ -31,6 +32,21 @@
 @media screen and (min-width: 769px) {
 
     .container #information-slideshow{
+        grid-template-columns: repeat(2, 1fr);
+
+        .flex-item{
+    
+            .item-text{
+                font-size: 1.125rem;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1025px) {
+
+    .container #information-slideshow{
         grid-template-columns: repeat(3, 1fr);
+        padding: 160px 0;
     }
 }

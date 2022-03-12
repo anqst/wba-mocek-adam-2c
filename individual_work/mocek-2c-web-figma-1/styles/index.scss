@@ -27,12 +27,11 @@
 
         p{
             font-size: 0.8125rem;
-            text-align: start;
         }
 
         button{
             color: $primary-text-color;
-            background-color: rgba($color: $secondary-text-color, $alpha: 0.3)
+            background-color: rgba($color: #F8F7EC, $alpha: 0.3)
         }
     }
 }
@@ -42,59 +41,78 @@
     #slideshow-introduction{
         @include upper-case;
         text-align: center;
+        h3{
+            font-size: 0.6875rem;
+        }
     }
 
     #image-slideshow{
         display: grid;
-        gap: 20px;
-      
+        gap: 40px;
         grid-template-columns: repeat(1, 1fr);
-        justify-content: center;
+        align-items: start;
 
         .flex-item{
             display: flex;
             flex-flow: row nowrap;
             justify-content: flex-start;
-            align-items: flex-start;
+            align-items: center;
             align-content: flex-start;
             gap: 20px;
 
-/*             .item-image{
-                height: 117px;
-                width: 117px;
-            } */
-
             .item-text{
+                display: flex;
+                flex-flow: column nowrap;
+                justify-content: center;
+                align-items: flex-start;
+                align-content: flex-start;
+                gap: 8px;
+
                 h3{
                     @include upper-case;
+                    font-size: 0.75rem;
                 }
                 p{
-                    font-weight: 300;
+                    font-size: 0.625rem;
                 }
-            } 
+            }
         }
     }
 }
 
 // Media queries
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 426px) {
 
     .container{
 
+        #slideshow-introduction{
+            h3{
+                font-size: 1.2rem;
+            }
+        }
+    
         #image-slideshow{
-            grid-template-columns: repeat(3, 1fr);
 
             .flex-item{
-                display: flex;
-                flex-flow: column nowrap;
-                justify-content: flex-start;
-                align-items: flex-start;
-                align-content: flex-start;
-                gap: 20px;
+
+                .item-text{
+
+                    gap: 15px;
+    
+                    h3{
+                        font-size: 0.9rem;
+                    }
+                    p{
+                        font-size: 0.75rem;
+                    }
+                }
             }
         }
     }
+}
+
+@media screen and (min-width: 769px) {
 
     #trailer{
 
@@ -113,7 +131,6 @@
         justify-content: flex-end;
         align-items: flex-end;
         align-content: flex-end;
-        gap: 20px;
 
         #trailer-box{
             width: 650px;
@@ -125,6 +142,7 @@
                 font-size: 3rem;
                 text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
             }
+
             p{
                 font-size: 1.5rem;
                 text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -133,6 +151,44 @@
             button{
                 color: $secondary-text-color;
                 background-color: $input-color;
+            }
+        }
+    }
+
+    .container{
+
+        #slideshow-introduction{
+            padding: 20px 0px;
+            h3{
+                font-size: 2.25rem;
+            }
+        }
+
+        #image-slideshow{
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+
+            .flex-item{
+                display: flex;
+                flex-flow: column nowrap;
+                justify-content: center;
+                align-items: center;
+                align-content: flex-start;
+                gap: 20px;
+
+                .item-text{
+                    
+                    align-items: center;
+
+                    h3{
+                        font-size: 1.5rem;
+                        text-align: center;
+                    }
+                    p{
+                        font-size: 1.125rem;
+                        text-align: center;
+                    }
+                }
             }
         }
     }

@@ -97,6 +97,55 @@ select {
   }
 }
 
+@font-face {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 300;
+  src: url(../fonts/lato-300.ttf);
+}
+
+@font-face {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  src: url(../fonts/lato-400.ttf);
+}
+
+@font-face {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 500;
+  src: url(../fonts/lato-500.ttf);
+}
+
+@font-face {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 600;
+  src: url(../fonts/lato-600.ttf);
+}
+
+@font-face {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 700;
+  src: url(../fonts/lato-700.ttf);
+}
+
+@font-face {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 800;
+  src: url(../fonts/lato-800.ttf);
+}
+
+@font-face {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 900;
+  src: url(../fonts/lato-900.ttf);
+}
+
 * {
   letter-spacing: 0.1rem;
 }
@@ -147,14 +196,15 @@ input, textarea {
   color: #000000;
   background-color: rgba(124, 116, 116, 0.3);
   padding: 0.4rem 0.6rem;
+  font-size: 0.6875rem;
 }
 
 button.prompt-button {
   text-transform: uppercase;
   background-color: #7C7474;
   color: #F8F7EC;
-  font-size: 0.6875rem;
   font-weight: 600;
+  font-size: 0.6875rem;
   -webkit-box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
           box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
   padding: 0.6rem 1.5rem;
@@ -229,8 +279,18 @@ ul#desktop-navigation {
   display: none;
 }
 
+ul#desktop-navigation li {
+  font-size: 0.9rem;
+  padding: 0.6rem;
+  text-transform: uppercase;
+}
+
+ul#desktop-navigation li.current {
+  background-color: rgba(124, 116, 116, 0.3);
+}
+
 ul#desktop-navigation, h2, h3 {
-  font-weight: bold;
+  font-weight: 700;
 }
 
 footer .color-cover {
@@ -256,7 +316,7 @@ footer .color-cover .container {
       align-content: flex-start;
 }
 
-footer .color-cover .container div#final-text {
+footer .color-cover .container #final-text {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -275,13 +335,17 @@ footer .color-cover .container div#final-text {
   gap: 0.2rem;
 }
 
-footer .color-cover .container div#final-text p {
+footer .color-cover .container #final-text p {
   text-transform: uppercase;
   text-align: center;
+  font-size: 0.75rem;
   font-weight: 500;
 }
 
 @media screen and (min-width: 769px) {
+  input, textarea {
+    font-size: 1rem;
+  }
   button.prompt-button {
     font-size: 1.125rem;
   }
@@ -312,12 +376,11 @@ footer .color-cover .container div#final-text p {
         align-content: flex-start;
     gap: 0.4rem;
   }
+}
+
+@media screen and (min-width: 1024px) {
   ul#desktop-navigation li {
-    padding: 0.4rem;
-    text-transform: uppercase;
-  }
-  ul#desktop-navigation li.current {
-    background-color: rgba(124, 116, 116, 0.3);
+    font-size: 1.125rem;
   }
 }
 /*# sourceMappingURL=core.css.map */

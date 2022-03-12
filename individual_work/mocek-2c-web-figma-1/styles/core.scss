@@ -8,7 +8,7 @@
 }
 
 body{
-    background-color: $primary-backgroud-color;
+    background-color: $primary-background-color;
     color: $primary-text-color;
     font-family: $primary-font;
 
@@ -39,15 +39,16 @@ input, textarea{
     color: $primary-text-color;
     @include transparent-input;
     padding: 0.4rem 0.6rem;
+    font-size: 0.6875rem;
 }
 
 button.prompt-button{
     @include upper-case;
     background-color: $input-color;
     color: $secondary-text-color;
-
-    font-size: 0.6875rem;
     font-weight: 600;
+    font-size: 0.6875rem;
+    
     box-shadow: 0px 5px 10px 0px rgba($color: rgb(0,0,0), $alpha: 0.5) ;
     padding: 0.6rem 1.5rem;
 }
@@ -68,7 +69,7 @@ button.prompt-button{
 
 .color-cover{
     width: 100%;
-    background-color: $secondary-backgroud-color;
+    background-color: $secondary-background-color;
 }
 
 .desktop-only{
@@ -106,11 +107,22 @@ header{
 }
 
 ul#desktop-navigation{
+
     display: none;
+
+    li{
+        font-size: 0.9rem;
+        padding: 0.6rem;
+        @include upper-case;
+    }
+
+    li.current{
+        @include transparent-input;
+    }
 }
 
 ul#desktop-navigation, h2, h3{
-    font-weight: bold;
+    font-weight: 700;
 }
 
 footer{
@@ -127,7 +139,7 @@ footer{
             align-items: center;
             align-content: flex-start;
 
-            div#final-text{
+            #final-text{
 
                 display: flex;
                 flex-flow: column nowrap;
@@ -139,6 +151,7 @@ footer{
                 p{
                     @include upper-case;
                     text-align: center;
+                    font-size: 0.75rem;
                     font-weight: 500;
                 }
             }
@@ -149,6 +162,10 @@ footer{
 // Media queries
 
 @media screen and (min-width: 769px) {
+
+    input, textarea{
+        font-size: 1rem;
+    }
 
     button.prompt-button{
         font-size: 1.125rem;
@@ -171,21 +188,20 @@ footer{
     }
 
     ul#desktop-navigation{
-
         display: flex;
         flex-flow: row nowrap;
         justify-content: flex-end;
         align-items: center;
         align-content: flex-start;
         gap: 0.4rem;
+    }
+}
 
+@media screen and (min-width: 1024px) {
+
+    ul#desktop-navigation{
         li{
-            padding: 0.4rem;
-            @include upper-case;
-        }
-
-        li.current{
-            @include transparent-input;
+            font-size: 1.125rem;
         }
     }
 }

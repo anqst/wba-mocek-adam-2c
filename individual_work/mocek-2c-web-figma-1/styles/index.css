@@ -1,3 +1,52 @@
+@font-face {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 300;
+  src: url(../fonts/lato-300.ttf);
+}
+
+@font-face {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  src: url(../fonts/lato-400.ttf);
+}
+
+@font-face {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 500;
+  src: url(../fonts/lato-500.ttf);
+}
+
+@font-face {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 600;
+  src: url(../fonts/lato-600.ttf);
+}
+
+@font-face {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 700;
+  src: url(../fonts/lato-700.ttf);
+}
+
+@font-face {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 800;
+  src: url(../fonts/lato-800.ttf);
+}
+
+@font-face {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 900;
+  src: url(../fonts/lato-900.ttf);
+}
+
 #trailer {
   width: 80%;
   margin: auto;
@@ -34,7 +83,6 @@
 
 #trailer #trailer-box p {
   font-size: 0.8125rem;
-  text-align: start;
 }
 
 #trailer #trailer-box button {
@@ -47,15 +95,19 @@
   text-align: center;
 }
 
+.container #slideshow-introduction h3 {
+  font-size: 0.6875rem;
+}
+
 .container #image-slideshow {
   display: -ms-grid;
   display: grid;
-  gap: 20px;
+  gap: 40px;
   -ms-grid-columns: (1fr)[1];
       grid-template-columns: repeat(1, 1fr);
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
 }
 
 .container #image-slideshow .flex-item {
@@ -69,49 +121,58 @@
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: start;
+      align-content: flex-start;
+  gap: 20px;
+}
+
+.container #image-slideshow .flex-item .item-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
   -ms-flex-line-pack: start;
       align-content: flex-start;
-  gap: 20px;
-  /*             .item-image{
-                height: 117px;
-                width: 117px;
-            } */
+  gap: 8px;
 }
 
 .container #image-slideshow .flex-item .item-text h3 {
   text-transform: uppercase;
+  font-size: 0.75rem;
 }
 
 .container #image-slideshow .flex-item .item-text p {
-  font-weight: 300;
+  font-size: 0.625rem;
+}
+
+@media screen and (min-width: 426px) {
+  .container #slideshow-introduction h3 {
+    font-size: 1.2rem;
+  }
+  .container #image-slideshow .flex-item .item-text {
+    gap: 15px;
+  }
+  .container #image-slideshow .flex-item .item-text h3 {
+    font-size: 0.9rem;
+  }
+  .container #image-slideshow .flex-item .item-text p {
+    font-size: 0.75rem;
+  }
 }
 
 @media screen and (min-width: 769px) {
-  .container #image-slideshow {
-    -ms-grid-columns: (1fr)[3];
-        grid-template-columns: repeat(3, 1fr);
-  }
-  .container #image-slideshow .flex-item {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-flow: column nowrap;
-            flex-flow: column nowrap;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
-    -ms-flex-line-pack: start;
-        align-content: flex-start;
-    gap: 20px;
-  }
   #trailer {
     background-image: url("/images/hero-image.svg");
     background-color: #bfffea;
@@ -136,7 +197,6 @@
             align-items: flex-end;
     -ms-flex-line-pack: end;
         align-content: flex-end;
-    gap: 20px;
   }
   #trailer #trailer-box {
     width: 650px;
@@ -154,6 +214,48 @@
   #trailer #trailer-box button {
     color: #F8F7EC;
     background-color: #7C7474;
+  }
+  .container #slideshow-introduction {
+    padding: 20px 0px;
+  }
+  .container #slideshow-introduction h3 {
+    font-size: 2.25rem;
+  }
+  .container #image-slideshow {
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+  .container #image-slideshow .flex-item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column nowrap;
+            flex-flow: column nowrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-line-pack: start;
+        align-content: flex-start;
+    gap: 20px;
+  }
+  .container #image-slideshow .flex-item .item-text {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .container #image-slideshow .flex-item .item-text h3 {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+  .container #image-slideshow .flex-item .item-text p {
+    font-size: 1.125rem;
+    text-align: center;
   }
 }
 /*# sourceMappingURL=index.css.map */
