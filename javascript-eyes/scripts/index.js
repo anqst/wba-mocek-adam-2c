@@ -1,4 +1,6 @@
-const clickMeButton = document.querySelector("button.clickable");
+// random + bg
+
+const clickMeButton = document.querySelector("button#random-color");
 
 clickMeButton.addEventListener("click", ()=> {
 
@@ -27,3 +29,23 @@ function GenerateRandomColoUr(){
 function GetRandom(min, max){
     return (Math.random() * max + min + 1);
 }
+
+
+// pole
+
+const messages = ["ok", "idk", "nice"];
+
+messages.forEach(function (element, index) {
+    console.log(`${element} at index ${index}`);
+})
+
+// show/hide element
+
+const showButton = document.querySelector("button#show-div");
+const divToShow = document.querySelector("div#hidden-div");
+divToShow.style.display = "none";
+
+showButton.addEventListener("click", function(){
+
+    (divToShow.style.display) == "none" ? divToShow.style.display = "block" : divToShow.style.display = "none";
+})
