@@ -2,8 +2,9 @@ const clickMeButton = document.querySelector("button.clickable");
 
 clickMeButton.addEventListener("click", ()=> {
 
-    console.log("xd");
-    clickMeButton.style.backgroundColor = GenerateRandomColoUr();
+    const randColor = GenerateRandomColoUr();
+    console.log(randColor);
+    clickMeButton.style.backgroundColor = randColor;
 });
 
 function GenerateRandomColoUr(){
