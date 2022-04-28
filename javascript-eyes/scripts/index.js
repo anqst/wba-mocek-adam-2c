@@ -2,9 +2,14 @@ const clickMeButton = document.querySelector("button.clickable");
 
 clickMeButton.addEventListener("click", ()=> {
 
-    const randColor = GenerateRandomColoUr();
-    console.log(randColor);
-    clickMeButton.style.backgroundColor = randColor;
+    if (GetRandom(0, 10) < 6){
+        const randColor = GenerateRandomColoUr();
+        console.log(randColor);
+        clickMeButton.style.backgroundColor = randColor;
+    } else {
+
+        console.log("ne nechce se mi");
+    }
 });
 
 function GenerateRandomColoUr(){
@@ -13,8 +18,12 @@ function GenerateRandomColoUr(){
     let colour = "#";
 
     for (let i = 0; i <=6; i++){
-        colour = `${colour}${randColorStringSource.substr(Math.random(0, randColorStringSource.length)*randColorStringSource.length+1, 1)}`;
+        colour = `${colour}${randColorStringSource.substr(GetRandom(0, randColorStringSource.length), 1)}`;
     }
 
     return colour;
+}
+
+function GetRandom(min, max){
+    return (Math.random() * max + min + 1);
 }
