@@ -1,0 +1,29 @@
+@import "reset";
+
+body{
+
+    padding: 1rem 1rem;
+
+    #sample{
+
+        display: flex;
+        flex-flow: column nowrap;
+
+        *{
+            color: white;
+            padding: 0rem 1rem;
+        }
+
+        #item1{
+    
+            width: 200px;
+            background-color: red;
+            transition: background-color 1s linear;
+        }
+
+        #item1:hover{
+
+            background-color: blue;
+        }
+    }
+}
