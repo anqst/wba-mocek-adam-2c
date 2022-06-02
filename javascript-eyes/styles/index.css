@@ -1,0 +1,50 @@
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.6rem;
+}
+
+.container{
+
+    height: 100vh;
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.centered-thing{
+
+    position: relative;
+    height: max-content;
+    width: 300px;
+}
+
+.centered-thing > *{
+    padding: 0.5rem;
+    width: 100%;
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+#open{
+    position: absolute;
+    z-index: 5;
+
+    cursor: pointer;
+    user-select: none;
+    background-color: bisque;
+}
+
+#hidden{
+    position: absolute;
+
+    font-size: 1.2rem;
+    background-color: red;
+
+    transition: top 0.5s ease;
+}
