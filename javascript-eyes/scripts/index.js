@@ -1,6 +1,7 @@
 document.addEventListener("DOMContentLoaded", function(){
 
     const open = document.querySelector("#open");
+    const arrow = document.querySelector("#arrow");
     const hidden = document.querySelector("#hidden");
 
     hidden.style.display = "none";
@@ -10,7 +11,7 @@ document.addEventListener("DOMContentLoaded", function(){
         if(hidden.style.display == "none"){
 
         hidden.style.display = "flex";
-        console.log(hidden.parentElement.offsetTop, hidden.offsetHeight);
+        arrow.style.transform = "rotate(-45deg)";
         hidden.style.top = `${-hidden.offsetHeight + open.offsetHeight}px`;
         hidden.style.top = `${open.offsetHeight}px`;
 
@@ -21,6 +22,7 @@ document.addEventListener("DOMContentLoaded", function(){
             hidden.addEventListener("transitionend", trans = function(){
 
                 hidden.style.display = "none";
+                arrow.style.transform = "rotate(45deg)";
                 hidden.removeEventListener("transitionend", trans);
             });
         }

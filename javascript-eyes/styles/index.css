@@ -34,10 +34,19 @@ body{
 #open{
     position: absolute;
     z-index: 5;
+    flex-flow: row nowrap;
 
     cursor: pointer;
     user-select: none;
     background-color: bisque;
+}
+
+#arrow{
+    width: 11px;
+    height: 11px;
+    border-right: solid 0.2rem black;
+    border-bottom: solid 0.2rem black;
+    transform: rotate(-45deg);
 }
 
 #hidden{
